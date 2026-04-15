@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Simpsons';
+    src: url('fonts/simpsonfont/Simpsonfont.otf');
+}
+
+.springfield-body {
+    margin: 0;
+    padding: 0;
+    background-color: #45a045; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa-interactivo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../imagenes/mapa_completo_springfield.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.zona-clic {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+
+.flanders-link {
+    top: 52%;
+    left: 8%;
+    width: 14%;
+    height: 25%;
+    transform: rotate(-15deg);
+}
+
+.simpson-link {
+    top: 40%;
+    left: 24%;
+    width: 16%;
+    height: 28%;
+    transform: rotate(-15deg);
+}
+
+.moe-link {
+    top: 5%;
+    left: 58%;
+    width: 15%;
+    height: 22%;
+    transform: rotate(-15deg);
+}
+
+.zona-clic:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 242, 0, 0.5);
+}
+
+footer {
+   font-family: 'Simpsons', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF200;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+}
+
+
+.interior-body {
+    background-color: #222; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-interactivo {
+    position: relative;
+    display: inline-block;
+    border: 4px solid #FFF200;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.imagen-fondo {
+    display: block;
+    max-width: 90vw;
+    height: auto;
+}
+
+
+.personaje-link {
+    position: absolute;
+    cursor: pointer;
+   
+}
+
+.personaje-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    outline: 2px solid white;
+}
+
+
+.homer-zone    { top: 10%; left: 40%; width: 22%; height: 75%; }
+.marge-zone    { top: 5%;  left: 20%; width: 20%; height: 85%; }
+.bart-zone     { top: 15%; left: 60%; width: 15%; height: 35%; }
+.lisa-zone     { top: 40%; left: 70%; width: 18%; height: 50%; }
+.maggie-zone   { top: 48%; left: 51%; width: 13%; height: 45%; }
+.ayudante-zone { top: 75%; left: 24%; width: 20%; height: 20%; }
+
+
+.menu-inferior {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton-volver {
+    font-family: 'Simpsons', sans-serif;
+    color: #000;
+    background-color: #FFF200;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.boton-volver:hover {
+    transform: scale(1.1);
+}
